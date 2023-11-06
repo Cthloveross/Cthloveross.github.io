@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2ac09fc75.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
 <div id="header">
@@ -15,11 +17,10 @@
         <nav>
             <img src="image/logo.jpg" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Protfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -45,12 +46,13 @@
                     dedication.  
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
-
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
+
+
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>UI/UX</span><br>Designing Web/APP interfaces</li>
                         <li><span>Web development</span><br>SQL</li>
@@ -60,7 +62,7 @@
 
 
 
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>2023 Fall - Current</span><br>CSE Department Tutor</li>
                         <li><span>2022 Fall - Current</span><br>Proctor</li>
@@ -69,21 +71,122 @@
                 </div>
 
 
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2021</span><br>Graduated From Greig High School</li>
                         <li><span>2021 - Current</span><br>University of California, San Diego</li>
                     </ul>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
 </div>
 
+<!-- --------------------projects---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class = "sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Social Compass Android App</h2>
+                <p>Develop a social app using Android Studio. 
+                    Managed app features such as location sharing, friend connections, 
+                    and remote and local databases and assigned them to the GitHub sprints.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Recommender System</h2>
+                <p>Designed and implemented a recommender system in Python utilizing the scikit-learn package, 
+                    applying principles of data training with a focus on linear and logistic regression algorithms.
+                    Leveraged Amazon's historical datasets to generate personalized product recommender systems, 
+                    enhancing user experience through targeted suggestions.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Graphics Rendering</h2>
+                <p>Developed a C++ application to render various geometric shapes, 
+                    showcasing versatility in computer graphics.
+                    Leveraged linear algebra and 3D modeling techniques to critically evaluate 
+                    and implement different rendering methods, including rasterization and ray tracing.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- --------------portfolio---------------------
+<div id="protfolio">
+    <div class="container">
+
+    </div>
+</div>
+ -->
+
+<!-- -----------------contact--------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tic001@ucsd.edu</p>
+                <p><i class="fa-solid fa-phone"></i>858-539-5879</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jason_chent/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Cthloveross"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="image/Resume cth.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+
+            <div class="contact-right">
+                <form>
+                    <input type = "text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright@Eason<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    // Remove the active class from all tablinks and tabcontents
+    for (var link of tablinks) {
+        link.classList.remove("active-link");
+    }
+    for (var content of tabcontents) {
+        content.classList.remove("active-tab");
+    }
+
+    // Add the active class to the clicked tab and the corresponding tab content
+    event.currentTarget.classList.add("active-link");
+
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
 
 
 
