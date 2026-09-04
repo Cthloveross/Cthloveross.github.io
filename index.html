@@ -1,201 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tianhao Chen | AI Security Researcher</title>
+    <meta name="author" content="Tianhao Chen">
+    <meta name="description" content="Tianhao Chen is a Computer Science master's student at Duke University researching agentic AI security, prompt injection, and secure retrieval.">
+    <meta name="theme-color" content="#012169">
+    <link rel="canonical" href="https://cthloveross.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cthloveross.github.io/">
+    <meta property="og:site_name" content="Tianhao Chen">
+    <meta property="og:title" content="Tianhao Chen | AI Security Researcher">
+    <meta property="og:description" content="Researching agentic AI security, prompt injection, tool and skill security, and secure retrieval at Duke University.">
+    <meta property="og:image" content="https://cthloveross.github.io/image/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tianhao Chen — AI Security Researcher">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tianhao Chen | AI Security Researcher">
+    <meta name="twitter:description" content="Researching agentic AI security, prompt injection, tool and skill security, and secure retrieval at Duke University.">
+    <meta name="twitter:image" content="https://cthloveross.github.io/image/og.png">
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/f2ac09fc75.js" crossorigin="anonymous"></script>
-</head>
-
-
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="image/logo.jpg" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Software Engineer</p>
-            <h1>Hi, I am<span> Tianhao</span><br> Chen from UCSD</h1>
+  </head>
+  <body>
+    <main class="site-container" id="top">
+      <header class="profile-section">
+        <div class="profile-copy">
+          <h1>Tianhao Chen</h1>
+          <p>
+            I am an M.S. student in Computer Science at
+            <a href="https://duke.edu/" target="_blank" rel="noreferrer">Duke University</a>,
+            advised by
+            <a href="https://people.duke.edu/~zg70/" target="_blank" rel="noreferrer">Prof. Neil Zhenqiang Gong</a>.
+            I received my B.S. in Computer Science with a minor in Mathematics from the
+            <a href="https://ucsd.edu/" target="_blank" rel="noreferrer">University of California San Diego</a>.
+          </p>
+          <p>
+            My research focuses on <strong>agentic AI security</strong>, tool and
+            skill supply-chain security, prompt injection, RAG corpus poisoning,
+            and secure agent systems. I am interested in building agents that
+            remain useful and trustworthy in open, adversarial environments.
+          </p>
+          <nav class="profile-links" aria-label="Contact links">
+            <a href="mailto:tc442@duke.edu">Email</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://github.com/Cthloveross" target="_blank" rel="noreferrer">GitHub</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://www.linkedin.com/in/tianhao-chen-40938b243" target="_blank" rel="noreferrer">LinkedIn</a>
+          </nav>
         </div>
-    </div>
-</div>
 
-<!--------------------about--------------------------->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="image/self.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class = "sub-title">About Me</h1>
-                <p>Currently, I am an undergraduate student majoring in Computer Science 
-                    with a minor in Math at the University of California San Diego, expecting 
-                    to graduate in 2025. My academic journey so far has been marked by consistent 
-                    dedication.  
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-
-
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming Languages</span><br>Java, C++, Python, HTML, CSS, React, SQL, Matlab, AndroidStudio, GitHub Actions CI, GitHub Project, Junit, Espresso, Agile
-                            Languages</li>
-                        <li><span>Relevent Courses</span><br>Design and Analysis of Algorithms, Software Engineering, Data Statistics, SQL, 3-D Modeling, Machine Learning</li>
-                        <li><span>Interests</span><br>Stocks, Hiking, Nice Food!</li>
-                    </ul>
-                </div>
-
-
-
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023 Fall - Current</span><br>CSE Department Tutor</li>
-                        <li><span>2022 Fall - Current</span><br>Proctor</li>
-                        <li><span>2023 Winter - Current</span><br>TripleC Member</li>
-                    </ul>
-                </div>
-
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Major</span><br>Computer Science</li>
-                        <li><span>Minor</span><br>Mathematics</li>
-                        <li><span>GPA</span><br>3.7/4.0</li>
-                        <li><span>2021 - Current</span><br>University of California, San Diego</li>
-                        <li><span>2021</span><br>Graduated From Greig High School</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="profile-visual">
+          <a href="image/tianhao-chen.jpg" aria-label="Open portrait of Tianhao Chen">
+            <img class="profile-photo" src="image/tianhao-chen.jpg" alt="Portrait of Tianhao Chen" width="660" height="820">
+          </a>
         </div>
-    </div>
-</div>
+      </header>
 
-
-
-<!-- --------------------projects---------------- -->
-<div id="projects">
-    <div class="container">
-        <h1 class = "sub-title">My Projects</h1>
-        <div class="projects-list">
-            <div>
-                <i class="fa-brands fa-android"></i>
-                <h2>Social Compass Android App</h2>
-                <p>Led a team of six classmates to develop a Zenly-inspired app using Android Studio. 
-                    Managed app features such as location sharing, friend connections, and remote and local databases 
-                    and assigned them to the GitHub sprints. Successfully completed the app; project available on GitHub</p>
-                    <a href="https://github.com/CSE-110-Winter-2023/cse-110-project-cse-110-team-30">learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>Recommender System</h2>
-                <p>Designed and implemented a recommender system in Python utilizing the scikit-learn package, 
-                    applying principles of data training with a focus on linear and logistic regression algorithms.
-                    Leveraged Amazon's historical datasets to generate personalized product recommender systems, 
-                    enhancing user experience through targeted suggestions.</p>
-                    <a href="#">learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Graphics Rendering</h2>
-                <p>Developed a C++ application to render various geometric shapes, 
-                    showcasing versatility in computer graphics.
-                    Leveraged linear algebra and 3D modeling techniques to critically evaluate 
-                    and implement different rendering methods, including rasterization and ray tracing.</p>
-                    <a href="#">learn more</a>
-            </div>
+      <section class="content-section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p class="research-statement">
+          I study security failures that emerge when language-model agents use
+          external tools, skills, and retrieved knowledge. My current work
+          combines adversarial evaluation, program analysis, provenance, and
+          system-level defenses.
+        </p>
+        <div class="topic-list" aria-label="Research areas">
+          <span>Agentic AI Security</span>
+          <span>Prompt Injection</span>
+          <span>Tool &amp; Skill Security</span>
+          <span>RAG Poisoning</span>
         </div>
-    </div>
-</div>
+      </section>
 
+      <section class="content-section" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-06">Jun 2026.</time>
+            <em>DyMalSkill</em>, our study of dynamic malicious skills in agentic AI,
+            is available on arXiv.
+            <a href="https://arxiv.org/abs/2606.16287" target="_blank" rel="noreferrer">[paper]</a>
+          </li>
+          <li>
+            <time datetime="2026">2026.</time>
+            I began developing an auditable pipeline for secure skill creation from untrusted resources.
+          </li>
+          <li>
+            <time datetime="2025-06">Jun 2025.</time>
+            I received my B.S. in Computer Science, with a minor in Mathematics, from UC San Diego.
+          </li>
+        </ul>
+      </section>
 
-
-
-<!-- --------------portfolio---------------------
-<div id="protfolio">
-    <div class="container">
-
-    </div>
-</div>
- -->
-
-<!-- -----------------contact--------------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>tic001@ucsd.edu</p>
-                <p><i class="fa-solid fa-phone"></i>858-539-5879</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/jason_chent/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Cthloveross"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/tianhao-chen-40938b243"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="image/Resume cth.pdf" download class="btn btn2">Download CV</a>
+      <section class="content-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="institution-logo" aria-label="Duke University">DU</div>
+            <div class="experience-info">
+              <h3>Duke University</h3>
+              <p>M.S. student in Computer Science · Research collaboration</p>
+              <small>Advised by Prof. Neil Zhenqiang Gong · Durham, NC</small>
             </div>
+            <time>2025 – Present</time>
+          </article>
 
-
-            <div class="contact-right">
-                <form>
-                    <input type = "text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+          <article class="experience-card">
+            <div class="institution-logo" aria-label="Tencent Cloud">腾讯</div>
+            <div class="experience-info">
+              <h3>Tencent Cloud</h3>
+              <p>Cloud Infrastructure Intern · Intelligent Agent Development</p>
+              <small>LLM fine-tuning, RAG diagnostics, and cloud deployment · Shenzhen, China</small>
             </div>
+            <time>May – Sep 2025</time>
+          </article>
 
-
+          <article class="experience-card">
+            <div class="institution-logo" aria-label="University of California San Diego">UCSD</div>
+            <div class="experience-info">
+              <h3>University of California San Diego</h3>
+              <p>B.S. in Computer Science · Minor in Mathematics</p>
+              <small>Provost Honors · La Jolla, CA</small>
+            </div>
+            <time>Graduated Jun 2025</time>
+          </article>
         </div>
-    </div>
-    <div class="copyright">
-        <p>copyright@Eason<i class="fa-solid fa-heart"></i></p>
-    </div>
-</div>
+      </section>
 
+      <section class="content-section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Selected Research &amp; Manuscripts</h2>
+        <div class="publication-list">
+          <article class="publication-card">
+            <h3>DyMalSkill: Dynamic Malicious Skills in Agentic AI</h3>
+            <p class="authors"><strong>Tianhao Chen*</strong>, Zhengyuan Jiang*, Yuepeng Hu, Yebei Gou, and Neil Zhenqiang Gong</p>
+            <p class="venue">arXiv:2606.16287, 2026 · Under review, ACL Rolling Review (August 2026 cycle)</p>
+            <p class="paper-summary">
+              Introduces a documentation-borne attack that induces agents to rewrite benign skill code at runtime.
+              A least-privilege defense reduced average attack success from 41.6% to 0% while preserving all 300 benign task completions.
+            </p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2606.16287" target="_blank" rel="noreferrer">[paper]</a>
+            </div>
+            <small class="paper-note">* Equal contribution</small>
+          </article>
 
+          <article class="publication-card">
+            <h3>Divide and Doubt: Diverse Distributed Poisoning for Retrieval-Augmented Generation</h3>
+            <p class="authors"><strong>Tianhao Chen</strong> et al.</p>
+            <p class="venue">First-author manuscript, 2026 · Under review, ACL Rolling Review (August 2026 cycle)</p>
+            <p class="paper-summary">
+              Develops a diverse, distributed poisoning strategy for RAG. Across 27 model–configuration settings,
+              it increases mean strict attack success over PoisonedRAG in both black-box and white-box evaluations.
+            </p>
+            <div class="paper-links"><span>Manuscript</span></div>
+          </article>
 
+          <article class="publication-card">
+            <h3>ToolDetect: Trace-Grounded Contextual Adjudication for Malicious Agent-Tool Detection</h3>
+            <p class="authors"><strong>Tianhao Chen</strong></p>
+            <p class="venue">Sole-authored manuscript, 2026</p>
+            <p class="paper-summary">
+              Builds a pre-execution Python tool screener combining behavior anchors, AST verification,
+              backward traces, provenance facts, and committee adjudication. It reaches 91.58% TPR at 0.75% FPR on 2,400 balanced instances.
+            </p>
+            <div class="paper-links"><span>Manuscript</span></div>
+          </article>
+        </div>
+      </section>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+      <section class="content-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>Secure Skill Creation from Untrusted Resources</h3>
+              <time>2026 – Present</time>
+            </div>
+            <p>
+              Built an auditable evaluator spanning 447 AppWorld resources, with deterministic retrieval,
+              provenance tracking, fresh-context skill compilation, clean-state resets, and execution-level verification.
+            </p>
+          </article>
 
-    function opentab(tabname) {
-    // Remove the active class from all tablinks and tabcontents
-    for (var link of tablinks) {
-        link.classList.remove("active-link");
-    }
-    for (var content of tabcontents) {
-        content.classList.remove("active-tab");
-    }
+          <article class="project-card">
+            <div class="project-heading">
+              <h3>SlideChat — Multi-Agent Tool-Calling System</h3>
+              <time>Oct 2025 – Jan 2026</time>
+            </div>
+            <p>
+              Built a router–planner–specialist system that translates natural-language requests into spatial transcriptomics
+              operations and multi-step bioinformatics analyses coordinated through shared state.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    // Add the active class to the clicked tab and the corresponding tab content
-    event.currentTarget.classList.add("active-link");
+      <section class="content-section details-grid" aria-labelledby="honors-heading">
+        <div>
+          <h2 id="honors-heading">Honors</h2>
+          <ul class="compact-list">
+            <li>Provost Honors, University of California San Diego</li>
+            <li>Top-8 National Team, International Quant Championship, 2024</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Technical Skills</h2>
+          <dl class="skills-list">
+            <div><dt>Programming</dt><dd>Python, C++, Java, R, SQL</dd></div>
+            <div><dt>ML &amp; Security</dt><dd>PyTorch, RAG, QLoRA, adversarial evaluation, static analysis, Pydantic</dd></div>
+            <div><dt>Systems</dt><dd>Linux, Docker, Kubernetes, Git, FastAPI, FAISS, Milvus, Prometheus</dd></div>
+            <div><dt>Languages</dt><dd>Mandarin Chinese (native), English (fluent)</dd></div>
+          </dl>
+        </div>
+      </section>
 
-    document.getElementById(tabname).classList.add("active-tab");
-}
-
-
-</script>
-
-
-
-</body>
+      <footer class="site-footer">
+        <p>
+          Last updated: Sep 2026. · Layout adapted from the academic homepages of
+          <a href="https://zhengyuan-jiang.github.io/" target="_blank" rel="noreferrer">Zhengyuan Jiang</a>
+          and <a href="https://jonbarron.info/" target="_blank" rel="noreferrer">Jon Barron</a>.
+        </p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </main>
+  </body>
 </html>
