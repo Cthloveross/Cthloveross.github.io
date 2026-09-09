@@ -34,15 +34,18 @@
           <p>
             I am an M.S. student in Computer Science at
             <a href="https://duke.edu/" target="_blank" rel="noreferrer">Duke University</a>,
-            advised by
-            <a href="https://people.duke.edu/~zg70/" target="_blank" rel="noreferrer">Prof. Neil Zhenqiang Gong</a>.
+            working with
+            <a href="https://people.duke.edu/~zg70/" target="_blank" rel="noreferrer">Prof. Neil Zhenqiang Gong</a>
+            on AI security and
+            <a href="https://scholars.duke.edu/person/pan.xu" target="_blank" rel="noreferrer">Prof. Pan Xu</a>
+            on offline reinforcement learning for healthcare.
             I received my B.S. in Computer Science with a minor in Mathematics from the
             <a href="https://ucsd.edu/" target="_blank" rel="noreferrer">University of California San Diego</a>.
           </p>
           <p>
             My research focuses on <strong>agentic AI security</strong>, tool and
-            skill supply-chain security, prompt injection, RAG corpus poisoning,
-            and secure agent systems. I am interested in building agents that
+            skill supply-chain security, prompt injection, and the robustness of
+            retrieval-augmented systems. I am interested in building agents that
             remain useful and trustworthy in open, adversarial environments.
           </p>
           <nav class="profile-links" aria-label="Contact links">
@@ -55,8 +58,11 @@
         </div>
 
         <div class="profile-visual">
-          <a href="image/tianhao-chen.jpg" aria-label="Open portrait of Tianhao Chen">
-            <img class="profile-photo" src="image/tianhao-chen.jpg" alt="Portrait of Tianhao Chen" width="660" height="820">
+          <a href="image/tianhao-chen-2026.jpg" aria-label="Open portrait of Tianhao Chen">
+            <picture>
+              <source srcset="image/tianhao-chen-2026.webp" type="image/webp">
+              <img class="profile-photo" src="image/tianhao-chen-2026.jpg" alt="Tianhao Chen on a tree-lined street" width="640" height="800" fetchpriority="high" decoding="async">
+            </picture>
           </a>
         </div>
       </header>
@@ -81,14 +87,15 @@
         <h2 id="news-heading">News</h2>
         <ul class="news-list">
           <li>
+            <time datetime="2026-08">Aug 2026.</time>
+            <em>DyMalSkill</em> and <em>Divide and Doubt</em> are under review in the
+            August 2026 cycle of ACL Rolling Review.
+          </li>
+          <li>
             <time datetime="2026-06">Jun 2026.</time>
             <em>DyMalSkill</em>, our study of dynamic malicious skills in agentic AI,
             is available on arXiv.
             <a href="https://arxiv.org/abs/2606.16287" target="_blank" rel="noreferrer">[paper]</a>
-          </li>
-          <li>
-            <time datetime="2026">2026.</time>
-            I began developing an auditable pipeline for secure skill creation from untrusted resources.
           </li>
           <li>
             <time datetime="2025-06">Jun 2025.</time>
@@ -104,8 +111,8 @@
             <div class="institution-logo" aria-label="Duke University">DU</div>
             <div class="experience-info">
               <h3>Duke University</h3>
-              <p>M.S. student in Computer Science · Research collaboration</p>
-              <small>Advised by Prof. Neil Zhenqiang Gong · Durham, NC</small>
+              <p>M.S. in Computer Science · Expected May 2027 · GPA: 3.9/4.0</p>
+              <small>Research with Prof. Neil Zhenqiang Gong (ECE) and Prof. Pan Xu (Biostatistics) · Durham, NC</small>
             </div>
             <time>2025 – Present</time>
           </article>
@@ -114,8 +121,8 @@
             <div class="institution-logo" aria-label="Tencent Cloud">腾讯</div>
             <div class="experience-info">
               <h3>Tencent Cloud</h3>
-              <p>Cloud Infrastructure Intern · Intelligent Agent Development</p>
-              <small>LLM fine-tuning, RAG diagnostics, and cloud deployment · Shenzhen, China</small>
+              <p>Cloud Infrastructure Intern · Intelligent Agent RAG Development</p>
+              <small>Document ingestion across 20+ formats, hybrid retrieval, and citation-grounded cloud diagnostics · Shenzhen, China</small>
             </div>
             <time>May – Sep 2025</time>
           </article>
@@ -125,7 +132,7 @@
             <div class="experience-info">
               <h3>University of California San Diego</h3>
               <p>B.S. in Computer Science · Minor in Mathematics</p>
-              <small>Provost Honors · La Jolla, CA</small>
+              <small>GPA: 3.75/4.0 · Provost Honors · La Jolla, CA</small>
             </div>
             <time>Graduated Jun 2025</time>
           </article>
@@ -136,12 +143,13 @@
         <h2 id="publications-heading">Selected Research &amp; Manuscripts</h2>
         <div class="publication-list">
           <article class="publication-card">
-            <h3>DyMalSkill: Dynamic Malicious Skills in Agentic AI</h3>
+            <h3>Dynamic Malicious Skills in Agentic AI</h3>
             <p class="authors"><strong>Tianhao Chen*</strong>, Zhengyuan Jiang*, Yuepeng Hu, Yebei Gou, and Neil Zhenqiang Gong</p>
             <p class="venue">arXiv:2606.16287, 2026 · Under review, ACL Rolling Review (August 2026 cycle)</p>
             <p class="paper-summary">
-              Introduces a documentation-borne attack that induces agents to rewrite benign skill code at runtime.
-              A least-privilege defense reduced average attack success from 41.6% to 0% while preserving all 300 benign task completions.
+              Studies documentation-borne threats that cause malicious behavior to emerge in otherwise benign skills at runtime.
+              Evaluated across two agent frameworks and five LLM backbones, DyMalSkill motivates a system-level defense
+              that achieved 0% observed attack success across all 12 tested malicious behaviors while preserving all 300 benign skill task completions.
             </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2606.16287" target="_blank" rel="noreferrer">[paper]</a>
@@ -150,51 +158,54 @@
           </article>
 
           <article class="publication-card">
-            <h3>Divide and Doubt: Diverse Distributed Poisoning for Retrieval-Augmented Generation</h3>
+            <h3>Divide and Doubt: Diverse Distributed Poisoning for RAG</h3>
             <p class="authors"><strong>Tianhao Chen</strong> et al.</p>
             <p class="venue">First-author manuscript, 2026 · Under review, ACL Rolling Review (August 2026 cycle)</p>
             <p class="paper-summary">
-              Develops a diverse, distributed poisoning strategy for RAG. Across 27 model–configuration settings,
-              it increases mean strict attack success over PoisonedRAG in both black-box and white-box evaluations.
+              Investigates the robustness of retrieval-augmented generation under diverse, distributed corpus poisoning,
+              including clustering-based defenses. Across 27 model–configuration settings, mean attack success
+              increases from 53.4% to 67.4% in black-box evaluation and from 52.3% to 68.4% in white-box evaluation.
             </p>
             <div class="paper-links"><span>Manuscript</span></div>
           </article>
 
           <article class="publication-card">
-            <h3>ToolDetect: Trace-Grounded Contextual Adjudication for Malicious Agent-Tool Detection</h3>
-            <p class="authors"><strong>Tianhao Chen</strong></p>
-            <p class="venue">Sole-authored manuscript, 2026</p>
+            <h3>ToolDetect: Code-Based Malicious Agent-Tool Detection</h3>
+            <p class="authors"><strong>Tianhao Chen</strong> et al.</p>
+            <p class="venue">Co-first-author manuscript · Under review, ICLR 2027</p>
             <p class="paper-summary">
-              Builds a pre-execution Python tool screener combining behavior anchors, AST verification,
-              backward traces, provenance facts, and committee adjudication. It reaches 91.58% TPR at 0.75% FPR on 2,400 balanced instances.
+              Screens Python agent tools before installation using AST-verified behavior anchors and two-pass,
+              context-aware committee adjudication. Evaluated against 12 scanners and detectors, it reaches
+              91.8% true positive rate at 0.5% false positive rate on a 2,400-instance tool benchmark,
+              and 94.0% at 0.25% on a separate 800-instance skill benchmark.
             </p>
             <div class="paper-links"><span>Manuscript</span></div>
+          </article>
+
+          <article class="publication-card">
+            <h3>Offline RL for Sepsis Treatment with Synthetic EHR Data</h3>
+            <p class="authors"><strong>Tianhao Chen</strong> et al.</p>
+            <p class="venue">Contributing author · Manuscript in progress · Advised by Prof. Pan Xu</p>
+            <p class="paper-summary">
+              Investigates when synthetic electronic health records improve offline reinforcement learning for sepsis treatment.
+              Adapts TimeDiff, HealthGen, and MTGAN to MIMIC-IV trajectories, with likelihood-based data filtering.
+              Ongoing evaluation compares real/synthetic data mixtures and asks which data-quality metrics predict downstream policy stability.
+            </p>
           </article>
         </div>
       </section>
 
       <section class="content-section" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Selected Projects</h2>
+        <h2 id="projects-heading">Ongoing Research</h2>
         <div class="project-list">
           <article class="project-card">
             <div class="project-heading">
-              <h3>Secure Skill Creation from Untrusted Resources</h3>
-              <time>2026 – Present</time>
+              <h3>Resource-to-Skill Poisoning in Retrieval-Augmented Skill Creation</h3>
             </div>
             <p>
-              Built an auditable evaluator spanning 447 AppWorld resources, with deterministic retrieval,
-              provenance tracking, fresh-context skill compilation, clean-state resets, and execution-level verification.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-heading">
-              <h3>SlideChat — Multi-Agent Tool-Calling System</h3>
-              <time>Oct 2025 – Jan 2026</time>
-            </div>
-            <p>
-              Built a router–planner–specialist system that translates natural-language requests into spatial transcriptomics
-              operations and multi-step bioinformatics analyses coordinated through shared state.
+              Studies whether untrusted retrieved documents can contaminate reusable agent skills, creating risks
+              that persist beyond the original task and session. Preliminary experiments examine persistence,
+              attack success, and benign task utility as separate outcomes; evaluation is ongoing.
             </p>
           </article>
         </div>
@@ -212,8 +223,8 @@
           <h2>Technical Skills</h2>
           <dl class="skills-list">
             <div><dt>Programming</dt><dd>Python, C++, Java, R, SQL</dd></div>
-            <div><dt>ML &amp; Security</dt><dd>PyTorch, RAG, QLoRA, adversarial evaluation, static analysis, Pydantic</dd></div>
-            <div><dt>Systems</dt><dd>Linux, Docker, Kubernetes, Git, FastAPI, FAISS, Milvus, Prometheus</dd></div>
+            <div><dt>ML &amp; AI</dt><dd>PyTorch, QLoRA, RAG, Pydantic</dd></div>
+            <div><dt>Systems</dt><dd>Linux, Docker, Kubernetes, Flask, FastAPI, MongoDB, Azure, Git, React</dd></div>
             <div><dt>Languages</dt><dd>Mandarin Chinese (native), English (fluent)</dd></div>
           </dl>
         </div>
@@ -221,7 +232,7 @@
 
       <footer class="site-footer">
         <p>
-          Last updated: Sep 2026. · Layout adapted from the academic homepages of
+          Last updated: <time datetime="2026-09-09">Sep 9, 2026</time>. · Layout adapted from the academic homepages of
           <a href="https://zhengyuan-jiang.github.io/" target="_blank" rel="noreferrer">Zhengyuan Jiang</a>
           and <a href="https://jonbarron.info/" target="_blank" rel="noreferrer">Jon Barron</a>.
         </p>
